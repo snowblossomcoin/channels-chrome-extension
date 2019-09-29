@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  background-color: #212121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 1.05em;
+}
+.paper {
+  background-color: whitesmoke;
+  padding: 1em;
+  box-shadow: 0 1em 2em black;
+  min-width: 25em;
+}
+.f { display: flex; }
+.fg { flex-grow: 1; }
+.column { flex-direction: column; }
+.paper > .option + .option { margin-top: 1em; }
+.paper > .option > label { font-weight: bold; font-size: 1.2em; }
+.paper > .option > .attribute { display: flex; }
+.paper > .option > .attribute { margin-top: 0.25em; }
+.paper > .option > .attribute > .detail.i { display: inline-block; }
+.paper > .option > .attribute > .detail.i > label { display: block; }
+.paper > .option > .attribute > .detail > label { color: gray; }
+.paper > .option > .attribute > .detail > input { font-size: 1.05em; width: 97%; }
+.paper > .option > .result > .state { }
+.paper > .option > .result > .state > label {
+  display: block;
+  margin-top: 0.5em;
+  text-align: center;
+  padding: 0.5em;
+}
+.endpoint > .result > .state.querying { display: block; }
+.endpoint > .result > .state.connected { display: none; }
+.endpoint > .result > .state.disconnected { display: none; }
+.endpoint > .result > .state.querying > label { background-color: lightgray; }
+.endpoint > .result > .state.connected > label { background-color: lightgreen; }
+.endpoint > .result > .state.disconnected > label { background-color: salmon; }
+.endpoint > .result > .state.connected > .tls { margin-top: 0.5em; }
+.endpoint > .result > .state.connected > .tls > label { 
+    display: block;
+    text-align: center;
+    color: gray;
+}
+.endpoint #endpoint-tls-fingerprint { text-align: center; }

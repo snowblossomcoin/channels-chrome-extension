@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="paper">
+            <div class="option endpoint">
+                <label>Endpoint</label>
+                <div class="attribute">
+                    <div class="detail i fg">
+                        <label for="endpoint-address">Address</label>
+                        <input class="fg" name="endpoint-address" type="text" max-length="255"/>
+                    </div>
+                    <div class="detail i">
+                        <label for="endpoint-port">Port</label>
+                        <input name="endpoint-port" type="number" min="0" max="65535" />
+                    </div>
+                </div>
+                <div class="result">
+                    <div class="state querying">
+                        <label>Querying...</label>
+                    </div>
+                    <div class="state connected">
+                        <label>Connected.</label>
+                        <div class="tls">
+                            <label>TLS SHA256 Fingerprint</label>
+                            <div id="endpoint-tls-fingerprint">
+                                31 11 50 0C 4A 66 01 2C DA E3 33 EC 3F CA 1C 9D<br>
+                                DE 45 C9 54 44 0E 7E E4 13 71 6B FF 36 63 C0 74
+                            </div>
+                        </div>
+                    </div>
+                    <div class="state disconnected">
+                        <label>Disconnected.</label>
+                        <ul>
+                            <li>Is the gateway running?</li>
+                            <li>Is the socket address:port correct?</li>
+                            <li>Is the gateway connectable?</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
