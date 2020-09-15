@@ -1,0 +1,13 @@
+{
+  "name": "Snowblossom Socks5 Enabler",
+  "version": "1.0",
+  "description": "Enables sock5s for access to channels",
+  "permissions": ["storage","proxy"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "manifest_version": 2
+
+}
+
