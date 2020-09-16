@@ -2,6 +2,14 @@
   "name": "Snowblossom Socks5 Enabler",
   "version": "1.0",
   "description": "Enables sock5s for access to channels",
+  "icons": {
+    "256": "icons/flower-on-256.png",
+    "128": "icons/flower-on-128.png",
+    "48":  "icons/flower-on-48.png",
+    "16":  "icons/flower-on-16.png"
+  },
+
+
   "permissions": ["storage","proxy"],
   "background": {
     "scripts": ["background.js"],
