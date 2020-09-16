@@ -24,3 +24,12 @@ chrome.proxy.settings.get(
   {'incognito': false},
   function(config2) {console.log(JSON.stringify(config2));});
 
+var icon_on = {
+  path: 'icons/flower-on.png'
+}
+var icon_off = {
+  path: 'icons/flower-off.png'
+}
+
+//chrome.browserAction.setIcon(icon_off);
+
